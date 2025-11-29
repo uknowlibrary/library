@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<style>
+body{
+background-color:black;
+cursor:pointer;
+}
+.homebar{
+max-width:100%;
+height:50px;
+border-radius:26px 40px;
+border:2px solid gold;
+color:gold;
+background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
+}
+.logo{
+width:50px;
+height:50px;
+border-radius: 26px 40px; 
+border:2px solid red; 
+position: relative;
+}
+.home{
+position: relative;
+top:-21px;
+left:10px;
+}
+.search{
+border-radius:26px 40px;
+position: relative;
+top:-24px;
+left:15px;
+max-width:200px;
+height:50px;
+}
+#srch{
+border-radius:26px 40px;
+position: relative;
+top:-77px;
+left:125px;
+max-width:200px;
+height:50px;
+}
+<!--scroll>
+div.scroll-container {
+  background-color: #333;
+  overflow: auto;
+  white-space: nowrap;
+  padding: 10px;
+color:gold;
+}
+
+div.scroll-container  text{
+  padding: 10px;
+color:gold;
+}
+<!--video-->
+.videos{
+display:flex;
+flex-wrap:wrap;
+gap:0px;
+color:gold;
+}
+.vid-item{
+border:1px solid red;
+padding:10px;
+text-allign:center;
+  border-radius:;
+}
+.vid-item iframe{
+max-width:px;
+height:;
+  border-radius:;
+}
+.effect:hover{
+width:px;
+height:px;
+}
+
+<!-- searcch filter-->
+#myInput {
+  background-image: url('/css/searchicon.png');
+  background-position: 10px 12px;
+  background-repeat: no-repeat;
+  width: 100%;
+  font-size: 16px;
+  padding: 12px 20px 12px 40px;
+  border: 1px solid #ddd;
+  margin-bottom: 12px;
+}
+
+#myUL {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+#myUL li a {
+  border: 1px solid #ddd;
+  margin-top: -1px; /* Prevent double borders */
+  background-color:;
+  padding: px;
+  text-decoration: none;
+  font-size: 18px;
+  color: gold;
+  display: block;
+}
+<!-- course-->
+#mycourse {
+  background-image: url('/css/searchicon.png');
+  background-position: 10px 12px;
+  background-repeat: no-repeat;
+  width: 100%;
+  font-size: 16px;
+  padding: 12px 20px 12px 40px;
+  border: 1px solid #ddd;
+  margin-bottom: 12px;
+}
+
+#myULs {
+  display:flex;
+flex-wrap:wrap;
+gap:20px;
+color:gold;
+
+}
+
+#myULs lis as {
+  border:0px solid red;
+padding:10px;
+text-allign:center;
+  border-radius:;
+}
+<!-- search video-->
+#myvideo {
+  background-image: url('/css/searchicon.png');
+  background-position: 10px 12px;
+  background-repeat: no-repeat;
+  width: 100%;
+  font-size: 16px;
+  padding: 12px 20px 12px 40px;
+  border: 1px solid #ddd;
+  margin-bottom: 12px;
+}
+
+</style>
+<link rel="stylesheet" href="https://spark00001.github.io/css/flex.css" />
+</head>
+<body>
+<div class="homebar"><img class="logo" src="/images/logo.png"></img><a class="home">HOME</a><p id="srch"></p>
+</div>
+<br>
+<div class="scroll-container"><text onclick="course()">COURSE</text><text onclick="genere()">GENERE</text><text onclick="video()">VIDEOS</text><text>NOTES</</div>
+<p id="output"></p>
+</body>
+<script src="/js/course.js"></script>
+<script src="/js/genere.js"></script>
+<script src="/js/video.js"></script>
+</html>
