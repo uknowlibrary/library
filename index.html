@@ -144,6 +144,22 @@ text-allign:center;
   border: 1px solid #ddd;
   margin-bottom: 12px;
 }
+#coursehover{
+height:50px;
+padding:10px;
+}
+#coursehover:hover{
+background-color:gold;
+color:black;
+}
+#videohover{
+height:50px;
+padding:10px;
+}
+#videohover:hover{
+background-color:gold;
+color:black;
+}
 
 </style>
 <link rel="stylesheet" href="https://spark00001.github.io/css/flex.css" />
@@ -152,9 +168,13 @@ text-allign:center;
 <div class="homebar"><img class="logo" src="/images/logo.png"></img><a class="home">HOME</a><p id="srch"></p>
 </div>
 <br>
-<div class="scroll-container"><text onclick="course()">COURSE</text><text onclick="genere()">GENERE</text><text onclick="video()">VIDEOS</text><text>NOTES</</div>
+<p id="homeslider"></p>
+<br>
 <p id="output"></p>
 </body>
+<script>
+document.getElementById("homeslider").innerHTML="<div class='scroll-container'><text id='coursehover' onclick='course()'>COURSE</text><text onclick='genere()'>GENERE</text>                 <text id='videohover' onclick='video()'>VIDEOS</text><text>NOTES</</div>";
+</script>
 <script src="/js/course.js"></script>
 <script src="/js/genere.js"></script>
 <script src="/js/video.js"></script>
