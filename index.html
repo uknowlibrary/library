@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UKNOW LIBRARY</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background-color:black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            overflow: hidden;
+            color:gold;
+        }
+        .splash {
+            text-align: center;
+            animation: fadeIn 1s ease-in-out;
+        }
+        .splash h1 {
+            font-size: 3em;
+            color: #333;
+        }
+        .splash p {
+            font-size: 1.2em;
+            color: #666;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: scale(0.9); }
+            to { opacity: 1; transform: scale(1); }
+        }
+        .hidden {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div id="splash" class="splash">
+        <h1>Welcome to UKNOW LIBRARY</h1>
+        <p>Loading...</p>
+    </div>
+
+    <script>
+        // Wait for 3 seconds, then redirect to the link
+        setTimeout(function() {
+            window.location.href = 'https://miss-connecticut-favorites-trembl.trycloudflare.com/'; // Replace with your desired link
+        }, 3000);
+    </script>
+</body>
+</html>
